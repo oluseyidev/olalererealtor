@@ -55,6 +55,11 @@ body {
     justify-content: center;
     gap: 20px;
     padding: 40px 5vw;
+    transition: all 0.3s ease-in-out;
+}
+
+.features:hover {
+    transform: scale(1.02); /* Slightly enlarges the entire section on hover */
 }
 
 .feature {
@@ -65,6 +70,13 @@ body {
     text-align: center;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
+}
+
+.feature:hover {
+    transform: translateY(-5px); /* Moves the card slightly up */
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2); /* Adds a deeper shadow */
+    background: rgb(200, 220, 247); /* Slight color change */
 }
 
 .feature img {
